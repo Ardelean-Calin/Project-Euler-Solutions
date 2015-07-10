@@ -12,10 +12,9 @@ for i, j in enumerate(nums):
 
 x.pop(0)
 x.pop(0)
-d = dict(zip(nums, x))
 
 sum_ = 0
-for key, value in d.items():
+for key, value in zip(nums, x):
     if value is True:
         sum_ += key
 
